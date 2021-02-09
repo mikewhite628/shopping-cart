@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Tiles from './Tile'
 import Inventory from './Inventory'
 
-function Products() {
+function Products(props) {
+    const { addToCart } = props
 
     const [ items, setItems] = useState(Inventory)
 
@@ -10,7 +11,7 @@ function Products() {
     <div className="App">
       {items.map((item) =>(
         <div>
-          <Tiles item={item} key={item.id} />
+          <Tiles item={item} key={item.id} addToCart={addToCart} />
         </div>
       ))}
     </div>

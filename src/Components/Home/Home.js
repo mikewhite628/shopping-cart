@@ -1,6 +1,8 @@
 import React from 'react'
+import Header from '../Header/Header';
 
-function App() {
+function Home(props) {
+  const { changeMe } = props
   return (
     <div className="App">
       Home Component
@@ -8,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Inventory from './Inventory'
 
 const Tiles = (props) => {
 
     const {
-        item: { name, img, price, id}
+        item: { name, img, price, id},
+        addToCart,
+        removeFromCart
     } = props
 
     return (
@@ -14,9 +17,12 @@ const Tiles = (props) => {
             <img src={img} alt={name}/> 
             <span>{price}</span>
             </Link>
-            <button>
+            <button onClick={() => addToCart(Inventory[id])}>
                 add to cart
-            </button>     
+            </button>    
+            <button onClick={() => removeFromCart(Inventory[id])}>
+                remove
+            </button> 
         </div>
     )
 }
