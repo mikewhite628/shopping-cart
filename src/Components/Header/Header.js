@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Header(props) {
 
-  const { cart } = props
+  const { getCartTotal } = props
 
 
     const navStyle ={
@@ -16,7 +16,7 @@ function Header(props) {
           <ul className='nav-links'>
               <li><Link style={navStyle} to='/'> Home </Link></li>
               <li><Link style={navStyle} to='/store'> Store </Link></li>
-              <li><Link style={navStyle} to='/cart'> Cartpic {cart.length} </Link></li>
+              <li><Link style={navStyle} to='/cart'> Cartpic {getCartTotal} </Link></li>
           </ul>
       </nav>
     </div>

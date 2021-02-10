@@ -10,15 +10,16 @@ console.log(props)
     let params = useParams()
 
     return (
-        <div className='item-tile'>
+        <div>
+        <div className='details'>
             <h1>{Inventory[params.id].name}</h1> 
             <img src={Inventory[params.id].img} /> 
             <div>{Inventory[params.id].description}</div> 
             <div>{Inventory[params.id].price}</div>
-            <button onClick={() => addToCart(Inventory[params.id])}>
+        </div>
+        <button onClick={() => addToCart(Inventory[params.id])}>
                 add to cart
             </button>
-
         </div>
     )
 }

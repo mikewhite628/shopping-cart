@@ -11,12 +11,26 @@ const Routes = () => {
     const [cart, setCart] = useState([])
     
     const addToCart = (item) => {
-        setCart([...cart, item])
+        let newCart = [...cart]
+        let itemInCart = cart.find(
+            (product) => item.name === product.name
+        )
+        if (itemInCart) {
+            itemInCart.quantity++
+        } else {
+            itemInCart = {
+                ...item,
+                quantity: 1,
+            }
+            newCart.push(itemInCart)
+        }
+        setCart(newCart)
     }  
     
     const removeFromCart = (itemToRemove) => {
-        console.log(itemToRemove)
-        setCart(cart.filter(items => items !== itemToRemove))
+        setCart(
+            cart.filter((items) => items.id !== itemToRemove.id))
+        
     }
 
     const clearCart = () => {
@@ -24,14 +38,18 @@ const Routes = () => {
     } 
 
     const total = () => {
-        return cart.reduce((sum, { price }) => sum + price, 0)
+        return cart.reduce((sum, { price, quantity }) => sum + price * quantity, 0)
     }
+
+    const getCartTotal = () => {
+        return cart.reduce((sum, {quantity}) => sum + quantity, 0
+        )}
 
 
     return (
         <div>
         <BrowserRouter>
-            <Header cart={cart}/>
+            <Header getCartTotal={getCartTotal()}/>
             <Switch>
                 <Route exact path='/'>
                     <Home />

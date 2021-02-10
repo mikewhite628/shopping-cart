@@ -8,10 +8,14 @@ function Products(props) {
     const [ items, setItems] = useState(Inventory)
 
   return (
-    <div className="App">
+    <div className="products-container">
       {items.map((item) =>(
-        <div>
+        <div className='products-item'>
           <Tiles item={item} key={item.id} addToCart={addToCart} removeFromCart={removeFromCart}  />
+          <button onClick={() => addToCart(Inventory[item.id])}>
+                add to cart
+               
+            </button>  
         </div>
       ))}
     </div>

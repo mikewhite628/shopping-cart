@@ -6,23 +6,15 @@ const Tiles = (props) => {
 
     const {
         item: { name, img, price, id},
-        addToCart,
-        removeFromCart
     } = props
 
     return (
-        <div className='item-tile'>
+        <div className='item-tile' key={id}>
             <Link to={`/store/${id}`}>
             <span>{name}</span> 
             <img src={img} alt={name}/> 
             <span>${price.toLocaleString()}</span>
             </Link>
-            <button onClick={() => addToCart(Inventory[id])}>
-                add to cart
-            </button>    
-            <button onClick={() => removeFromCart(Inventory[id])}>
-                remove
-            </button> 
         </div>
     )
 }
