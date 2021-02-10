@@ -3,7 +3,7 @@ import Tiles from './Tile'
 import Inventory from './Inventory'
 
 function Products(props) {
-    const { addToCart } = props
+    const { addToCart, removeFromCart } = props
 
     const [ items, setItems] = useState(Inventory)
 
@@ -11,7 +11,7 @@ function Products(props) {
     <div className="App">
       {items.map((item) =>(
         <div>
-          <Tiles item={item} key={item.id} addToCart={addToCart} />
+          <Tiles item={item} key={item.id} addToCart={addToCart} removeFromCart={removeFromCart}  />
         </div>
       ))}
     </div>

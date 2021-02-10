@@ -19,6 +19,15 @@ const Routes = () => {
         setCart(cart.filter(items => items !== itemToRemove))
     }
 
+    const clearCart = () => {
+        setCart([])
+    } 
+
+    const total = () => {
+        return cart.reduce((sum, { price }) => sum + price, 0)
+    }
+
+
     return (
         <div>
         <BrowserRouter>
@@ -28,13 +37,13 @@ const Routes = () => {
                     <Home />
                 </Route>
                 <Route exact path='/store'>
-                    <Products addToCart={addToCart}/>
+                    <Products addToCart={addToCart} removeFromCart={removeFromCart}/>
                 </Route> 
                 <Route path='/cart'>
-                    <Cart cart={cart} removeFromCart={removeFromCart}/>
+                    <Cart cart={cart} removeFromCart={removeFromCart} clearCart={clearCart} total={total()}/>
                 </Route>
                 <Route path='/store/:id'>
-                    <Details addToCart={addToCart} />
+                    <Details addToCart={addToCart} removeFromCart={removeFromCart}/>
                 </Route> 
             </Switch>
         </BrowserRouter>

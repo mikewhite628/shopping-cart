@@ -15,7 +15,7 @@ const Tiles = (props) => {
             <Link to={`/store/${id}`}>
             <span>{name}</span> 
             <img src={img} alt={name}/> 
-            <span>{price}</span>
+            <span>${price.toLocaleString()}</span>
             </Link>
             <button onClick={() => addToCart(Inventory[id])}>
                 add to cart

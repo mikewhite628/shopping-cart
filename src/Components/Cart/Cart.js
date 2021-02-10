@@ -4,7 +4,7 @@ import Tiles from '../Store/Tile';
 
 function Cart(props) {
 
-  const { cart, addToCart, removeFromCart } = props
+  const { cart, addToCart, removeFromCart, clearCart, total } = props
 
 
 
@@ -16,6 +16,8 @@ function Cart(props) {
           <Tiles item={item} key={item.id} addToCart={addToCart} removeFromCart={removeFromCart} />
         </div>
       ))}
+      <div> Total: ${total.toLocaleString()} </div>
+    <button onClick={clearCart}> clear cart </button>
     </div>
   );
 }
