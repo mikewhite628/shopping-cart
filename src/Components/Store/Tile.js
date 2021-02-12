@@ -5,7 +5,7 @@ import Inventory from './Inventory'
 const Tiles = (props) => {
 
     const {
-        item: { name, img, price, id},
+        item: { name, img, price, id} , defaultValue, increment, decrement 
     } = props
 
     return (

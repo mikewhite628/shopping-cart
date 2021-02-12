@@ -11,13 +11,11 @@ function Products(props) {
     <div className="products-container">
       {items.map((item) =>(
         <div className='products-item'>
-          <Tiles item={item} key={item.id} addToCart={addToCart} removeFromCart={removeFromCart}  />
-          <button onClick={() => addToCart(Inventory[item.id])}>
-                add to cart
-               
-            </button>  
+          <Tiles item={item} key={item.id} addToCart={addToCart} />
         </div>
+        
       ))}
+      
     </div>
   );
 }

@@ -9,6 +9,8 @@ import Details from './Components/Store/ProductDetail';
 const Routes = () => {
 
     const [cart, setCart] = useState([])
+    const [defaultValue, setDefaultValue] = useState(1)
+    
     
     const addToCart = (item) => {
         let newCart = [...cart]
@@ -16,21 +18,30 @@ const Routes = () => {
             (product) => item.name === product.name
         )
         if (itemInCart) {
-            itemInCart.quantity++
+            itemInCart.quantity = itemInCart.quantity + defaultValue
         } else {
             itemInCart = {
                 ...item,
-                quantity: 1,
+                quantity: defaultValue,
             }
             newCart.push(itemInCart)
         }
         setCart(newCart)
+        setDefaultValue(1)
     }  
     
     const removeFromCart = (itemToRemove) => {
-        setCart(
-            cart.filter((items) => items.id !== itemToRemove.id))
-        
+        let newCart = [...cart]
+        let itemInCart = cart.find(
+            (product) => itemToRemove.quantity = product.quantity
+        )
+        if (itemToRemove.quantity > 1) {
+            itemInCart.quantity = itemInCart.quantity - 1
+            setCart(newCart)
+        } else {
+            setCart(
+                cart.filter((items) => items.id !== itemToRemove.id))
+        }
     }
 
     const clearCart = () => {
@@ -45,9 +56,17 @@ const Routes = () => {
         return cart.reduce((sum, {quantity}) => sum + quantity, 0
         )}
 
+    const increment = () => {
+        setDefaultValue(defaultValue + 1)
+    }
+
+    const decrement = () => {
+        setDefaultValue(defaultValue - 1)
+    }
+
 
     return (
-        <div>
+        <div className='App'>
         <BrowserRouter>
             <Header getCartTotal={getCartTotal()}/>
             <Switch>
@@ -55,13 +74,13 @@ const Routes = () => {
                     <Home />
                 </Route>
                 <Route exact path='/store'>
-                    <Products addToCart={addToCart} removeFromCart={removeFromCart}/>
+                    <Products addToCart={addToCart} removeFromCart={removeFromCart} />
                 </Route> 
                 <Route path='/cart'>
                     <Cart cart={cart} removeFromCart={removeFromCart} clearCart={clearCart} total={total()}/>
                 </Route>
                 <Route path='/store/:id'>
-                    <Details addToCart={addToCart} removeFromCart={removeFromCart}/>
+                    <Details addToCart={addToCart} removeFromCart={removeFromCart}  increment={increment.bind(this)} decrement={decrement.bind(this)} defaultValue={defaultValue} />
                 </Route> 
             </Switch>
         </BrowserRouter>

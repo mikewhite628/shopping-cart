@@ -20,8 +20,8 @@ function Cart(props) {
     <div className="products-container">
       {cart.map((item) =>(
         <div className='products-item'>
+          <div className='quantity'> Quantity: {item.quantity}</div>
           <Tiles item={item} key={item.id} />
-          {item.quantity}
           <button onClick={() => removeFromCart(Inventory[item.id])}>
                 remove
             </button> 
