@@ -1,29 +1,61 @@
-body
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap')
     
-
-
+body
+    font-family: 'Roboto'
+    
+@media only screen and (max-width:1200px)
 .home
     background: url(images/better.png)
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-baackground-size: cover
     background-size: cover
-    height: 100vh
-    width: 100vws
-    
+    background-position: center
+    width: 100vw
+    height:100vh
+
+@media only screen and (max-width:992px)
+    .home
+        background: url(images/background-tablet.png)
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-baackground-size: cover
+        background-size: cover
+        background-position: center
+        width: 100vw
+        height:100vh
+
+
+@media only screen and (max-width:600px)
+    .home
+        background: url(images/background-tablet.png)
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-baackground-size: cover
+        background-size: cover
+        background-position: center
+        width: 100vw
+        height:100vh
+
+.home
+    margin-top: -30px
+    margin-left: -10px
+
 
 nav
     display: flex
     justify-content: space-around
     align-items: center
     min-height: 10vh 
-    background: rgb(73,79,82)
+    background: rgb(73,79,82, .9)
     font-family: sans-serif
-    font-size: 30
     margin-bottom: 30px
     width: 100vw
     margin-top: -10px
     margin-left: -10px
+    font-family: 'Bebas Neue'
+    font-size: 1.5rem
     
 
 .nav-links
@@ -38,17 +70,90 @@ nav
     width: 100%
     flex-wrap: wrap
     justify-content: space-around
+    max-width: 1600px
+    margin: auto
+   
 
 .products-item
     text-align: center
     margin-bottom: 30px
+    
 
 
 .item-tile
     width: 300px
     text-align: center
     margin-bottom: 10px
+    transition-property: all
+    transition-duration: .05s
+
+.item-tile:hover
+    box-shadow: 1px 1px 3px #555555
+    transform: scale(1.05)
+
+.guitar-img
+    height: 370px
+    width: 250px
+
 
 img
     margin-left: -20px
     margin-top: 20px
+
+.details
+    display: flex
+    width: 100%
+    flex-wrap: wrap
+    justify-content: center
+.details-container
+    text-align: center
+    width: 100%
+.description
+    width: 300px
+    align-self: center
+    padding: 30px
+.left-modifier
+    width: 30px
+    height: 36px
+    padding: 0
+    font-size: 10px
+.right-modifier
+    width: 30px
+    height: 36px
+    padding: 0
+    font-size: 10px
+.quantity-input-screen
+    width: 30px
+    height: 30px
+    text-align: center
+.quantity-input-screen:active
+    outline: none
+
+.quantity-input
+    margin-bottom: 10px
+    margin-top: 10px
+
+.hide 
+    display: none
+.show 
+  display: block
+.modal 
+  width: 500px
+  position: relative
+  margin: 0px auto
+  padding: 20px
+  background-color: #fff
+  border-radius: 2px
+  transform: translateY(100%)
+  transition: transform 0.2s ease
+  box-shadow: 0 2px 8px 3px
+  font-family: Helvetica, Arial, sans-serif
+.overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #0000003a
+  transition: opacity 0.2s ease
+

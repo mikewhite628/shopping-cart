@@ -9,14 +9,20 @@ console.log(props)
 
     let params = useParams()
 
+    const addToCartStyle = {
+        height: '30px',
+        width: '100px',
+        
+    }
+
     return (
-        <div>
-        <div className='details'>
+        <div className='details-container'>
             <h1>{Inventory[params.id].name}</h1> 
-            <img src={Inventory[params.id].img} /> 
-            <div>{Inventory[params.id].description}</div> 
-            <div>{Inventory[params.id].price}</div>
+        <div className='details'>
+            <img src={Inventory[params.id].img} className='guitar-img'/> 
+            <div className='description'>{Inventory[params.id].description}</div> 
         </div>
+        <div>${Inventory[params.id].price.toLocaleString()}</div>
         <div className='quantity-input'>
             <button className='quantity-modifier, left-modifier' onClick={decrement} >
               &mdash;
@@ -26,7 +32,7 @@ console.log(props)
               &#xff0b;
             </button>
           </div>
-        <button onClick={() => addToCart(Inventory[params.id])}>
+        <button onClick={() => addToCart(Inventory[params.id])} style={addToCartStyle}>
                 add to cart
             </button>
 
