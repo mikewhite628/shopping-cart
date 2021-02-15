@@ -70,7 +70,6 @@ const Routes = () => {
         <div className='App'>
         <Router basename={process.env.PUBLIC_URL}>
             <Header getCartTotal={getCartTotal()}/>
-            <Home />
             <Switch>
                 <Route exact path='/'> 
                 <Home />
