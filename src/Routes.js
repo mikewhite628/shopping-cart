@@ -71,7 +71,7 @@ const Routes = () => {
         <Router basename={process.env.PUBLIC_URL}>
             <Header getCartTotal={getCartTotal()}/>
             <Switch>
-                <Route exact path='/home'>
+                <Route exact path='/'>
                     <Home />
                 </Route>
                 <Route exact path='/store'>
