@@ -46,7 +46,9 @@ function Cart(props) {
     width: '100px',
     backgroundColor: '#FF0000',
     color: 'white',
-    border: 'none'
+    border: 'none',
+    marginTop: '20px',
+    marginLeft: '-15px'
   }
 
   

@@ -74,7 +74,6 @@ const Routes = () => {
                 <Route exact path='/'> 
                 <Home />
                 </Route>
-                    
                 <Route exact path='/store'>
                     <Products addToCart={addToCart} removeFromCart={removeFromCart} />
                 </Route> 
