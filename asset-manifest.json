@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/shopping-cartstatic/css/main.6b7ce625.chunk.css",
-    "main.js": "/shopping-cartstatic/js/main.abeb2034.chunk.js",
-    "main.js.map": "/shopping-cartstatic/js/main.abeb2034.chunk.js.map",
-    "runtime-main.js": "/shopping-cartstatic/js/runtime-main.d62b2c72.js",
-    "runtime-main.js.map": "/shopping-cartstatic/js/runtime-main.d62b2c72.js.map",
-    "static/js/2.8e01903e.chunk.js": "/shopping-cartstatic/js/2.8e01903e.chunk.js",
-    "static/js/2.8e01903e.chunk.js.map": "/shopping-cartstatic/js/2.8e01903e.chunk.js.map",
-    "index.html": "/shopping-cartindex.html",
-    "static/css/main.6b7ce625.chunk.css.map": "/shopping-cartstatic/css/main.6b7ce625.chunk.css.map",
-    "static/js/2.8e01903e.chunk.js.LICENSE.txt": "/shopping-cartstatic/js/2.8e01903e.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/shopping-cartstatic/media/better.789c9eb4.png",
-    "static/media/guitar1.cfa6b108.png": "/shopping-cartstatic/media/guitar1.cfa6b108.png",
-    "static/media/guitar2.95939e70.png": "/shopping-cartstatic/media/guitar2.95939e70.png",
-    "static/media/guitar3.e6cbce8c.png": "/shopping-cartstatic/media/guitar3.e6cbce8c.png",
-    "static/media/guitar4.6d50b7ee.png": "/shopping-cartstatic/media/guitar4.6d50b7ee.png",
-    "static/media/guitar5.348b6027.png": "/shopping-cartstatic/media/guitar5.348b6027.png",
-    "static/media/guitar6.64a06d47.png": "/shopping-cartstatic/media/guitar6.64a06d47.png",
-    "static/media/guitar7.15a6ec07.png": "/shopping-cartstatic/media/guitar7.15a6ec07.png",
-    "static/media/guitar8.1ada4935.png": "/shopping-cartstatic/media/guitar8.1ada4935.png",
-    "static/media/shopping-cart.b8f7d146.png": "/shopping-cartstatic/media/shopping-cart.b8f7d146.png"
+    "main.css": "/shopping-cart/home/static/css/main.f3a175ae.chunk.css",
+    "main.js": "/shopping-cart/home/static/js/main.a6393ff4.chunk.js",
+    "main.js.map": "/shopping-cart/home/static/js/main.a6393ff4.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/home/static/js/runtime-main.45e1f84b.js",
+    "runtime-main.js.map": "/shopping-cart/home/static/js/runtime-main.45e1f84b.js.map",
+    "static/js/2.8e01903e.chunk.js": "/shopping-cart/home/static/js/2.8e01903e.chunk.js",
+    "static/js/2.8e01903e.chunk.js.map": "/shopping-cart/home/static/js/2.8e01903e.chunk.js.map",
+    "index.html": "/shopping-cart/home/index.html",
+    "static/css/main.f3a175ae.chunk.css.map": "/shopping-cart/home/static/css/main.f3a175ae.chunk.css.map",
+    "static/js/2.8e01903e.chunk.js.LICENSE.txt": "/shopping-cart/home/static/js/2.8e01903e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/shopping-cart/home/static/media/better.789c9eb4.png",
+    "static/media/guitar1.cfa6b108.png": "/shopping-cart/home/static/media/guitar1.cfa6b108.png",
+    "static/media/guitar2.95939e70.png": "/shopping-cart/home/static/media/guitar2.95939e70.png",
+    "static/media/guitar3.e6cbce8c.png": "/shopping-cart/home/static/media/guitar3.e6cbce8c.png",
+    "static/media/guitar4.6d50b7ee.png": "/shopping-cart/home/static/media/guitar4.6d50b7ee.png",
+    "static/media/guitar5.348b6027.png": "/shopping-cart/home/static/media/guitar5.348b6027.png",
+    "static/media/guitar6.64a06d47.png": "/shopping-cart/home/static/media/guitar6.64a06d47.png",
+    "static/media/guitar7.15a6ec07.png": "/shopping-cart/home/static/media/guitar7.15a6ec07.png",
+    "static/media/guitar8.1ada4935.png": "/shopping-cart/home/static/media/guitar8.1ada4935.png",
+    "static/media/shopping-cart.b8f7d146.png": "/shopping-cart/home/static/media/shopping-cart.b8f7d146.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d62b2c72.js",
+    "static/js/runtime-main.45e1f84b.js",
     "static/js/2.8e01903e.chunk.js",
-    "static/css/main.6b7ce625.chunk.css",
-    "static/js/main.abeb2034.chunk.js"
+    "static/css/main.f3a175ae.chunk.css",
+    "static/js/main.a6393ff4.chunk.js"
   ]
 }
