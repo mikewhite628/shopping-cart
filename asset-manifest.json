@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.42994e9b.chunk.css",
+    "main.css": "/shopping-cart/static/css/main.09a77343.chunk.css",
     "main.js": "/shopping-cart/static/js/main.03febda4.chunk.js",
     "main.js.map": "/shopping-cart/static/js/main.03febda4.chunk.js.map",
     "runtime-main.js": "/shopping-cart/static/js/runtime-main.b56c1ee8.js",
@@ -8,7 +8,7 @@
     "static/js/2.bff53d10.chunk.js": "/shopping-cart/static/js/2.bff53d10.chunk.js",
     "static/js/2.bff53d10.chunk.js.map": "/shopping-cart/static/js/2.bff53d10.chunk.js.map",
     "index.html": "/shopping-cart/index.html",
-    "static/css/main.42994e9b.chunk.css.map": "/shopping-cart/static/css/main.42994e9b.chunk.css.map",
+    "static/css/main.09a77343.chunk.css.map": "/shopping-cart/static/css/main.09a77343.chunk.css.map",
     "static/js/2.bff53d10.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.bff53d10.chunk.js.LICENSE.txt",
     "static/media/App.css": "/shopping-cart/static/media/better.789c9eb4.png",
     "static/media/guitar1.cfa6b108.png": "/shopping-cart/static/media/guitar1.cfa6b108.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.b56c1ee8.js",
     "static/js/2.bff53d10.chunk.js",
-    "static/css/main.42994e9b.chunk.css",
+    "static/css/main.09a77343.chunk.css",
     "static/js/main.03febda4.chunk.js"
   ]
 }
