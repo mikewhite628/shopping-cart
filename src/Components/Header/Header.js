@@ -37,7 +37,7 @@ function Header(props) {
     <div className="App">
       <nav>
           <ul className='nav-links'>
-              <li><Link style={navStyle} to='/home'> Home </Link></li>
+              <li><Link style={navStyle} to='/'> Home </Link></li>
               <li><Link style={navStyle} to='/store'> Store </Link></li>
               <li><Link style={navStyle} to='/cart'> <img src={shoppingCart} style={cartStyle} alt='cart' />  <div style={cartTotalStyle}> {getCartTotal} </div> </Link></li>
               
