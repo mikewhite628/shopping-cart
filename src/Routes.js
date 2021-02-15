@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Switch, Route, useParams } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom' 
 import Home from './Components/Home/Home'
 import Cart from './Components/Cart/Cart'
 import Header from './Components/Header/Header';
@@ -67,7 +68,7 @@ const Routes = () => {
 
     return (
         <div className='App'>
-        <BrowserRouter>
+        <Router basename={process.env.PUBLIC_URL}>
             <Header getCartTotal={getCartTotal()}/>
             <Switch>
                 <Route exact path='/home'>
@@ -83,7 +84,7 @@ const Routes = () => {
                     <Details addToCart={addToCart} removeFromCart={removeFromCart}  increment={increment.bind(this)} decrement={decrement.bind(this)} defaultValue={defaultValue} />
                 </Route> 
             </Switch>
-        </BrowserRouter>
+        </Router>
         </div>
     )
 }
