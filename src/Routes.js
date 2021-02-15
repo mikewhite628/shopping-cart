@@ -72,7 +72,7 @@ const Routes = () => {
             <Header getCartTotal={getCartTotal()}/>
             <Home />
             <Switch>
-                <Route exact path='/home'> 
+                <Route exact path='/'> 
                 <Home />
                 </Route>
                     
