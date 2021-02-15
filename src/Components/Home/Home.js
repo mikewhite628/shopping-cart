@@ -11,7 +11,8 @@ const Home = () => {
   }
   return (
     <div className="home" >
-  
+      <div className='welcome-message'>
+      </div>
     </div>
   );
 }

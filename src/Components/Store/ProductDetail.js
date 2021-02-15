@@ -12,6 +12,9 @@ console.log(props)
     const addToCartStyle = {
         height: '30px',
         width: '100px',
+        backgroundColor: '#24a0ed',
+        color: 'white',
+        border: 'none'
         
     }
 
@@ -19,8 +22,13 @@ console.log(props)
         <div className='details-container'>
             <h1>{Inventory[params.id].name}</h1> 
         <div className='details'>
+            <div className='details-item'>
             <img src={Inventory[params.id].img} className='guitar-img'/> 
+            </div>
+            <div className='description-box'>
+            <div className='description-title'>Description</div>
             <div className='description'>{Inventory[params.id].description}</div> 
+            </div>
         </div>
         <div>${Inventory[params.id].price.toLocaleString()}</div>
         <div className='quantity-input'>

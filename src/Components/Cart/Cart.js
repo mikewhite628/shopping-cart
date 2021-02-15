@@ -23,16 +23,40 @@ function Cart(props) {
 
   const styleRemove = {
     marginTop: '20px',
-    marginLeft: '-15px'
+    marginLeft: '-15px',
+    height: '30px',
+    width: '100px',
+    backgroundColor: '#FF0000',
+    color: 'white',
+    border: 'none'
+
   }
+
+  const styleCheckOut = {
+    height: '30px',
+    width: '100px',
+    backgroundColor: '#24a0ed',
+    color: 'white',
+    border: 'none'
+  }
+
+  const styleEmpty = { 
+    alignSelf: 'center',
+    height: '30px',
+    width: '100px',
+    backgroundColor: '#FF0000',
+    color: 'white',
+    border: 'none'
+  }
+
+  
 
 
   return (
     <div>
-      {!show && <button onClick={openCheckout}> checkout </button>}
+      {!show && <button onClick={openCheckout} style={styleCheckOut}> checkout </button>}
       <Checkout closeCheckout={closeCheckout}  show={show} />
       <div style={styleTotal}> Total: ${total.toLocaleString()} </div>
-      <button onClick={clearCart}> Empty Cart </button>
     <div className="products-container">
       {cart.map((item) =>(
         <div className='products-item'>
@@ -44,8 +68,9 @@ function Cart(props) {
         </div>
       ))}
       
-    
+      <button style={styleEmpty} onClick={clearCart} > Empty Cart </button>
     </div>
+    
     </div>
   );
 }

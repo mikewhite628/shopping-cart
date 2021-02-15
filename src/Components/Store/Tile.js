@@ -20,10 +20,14 @@ const Tiles = (props) => {
     return (
         <div className='item-tile' key={id}>
             <Link to={`/store/${id}`} style={linkStyle}>
-            <span>{name}</span> 
             <img src={img} alt={name} className='guitar-img'/> 
             <br />
+            <div className='item-info'>
+            <span>{name}</span> 
+            <br />
+            <br />
             <span style={priceStyle}>${price.toLocaleString()}</span>
+            </div>
             </Link>
         </div>
     )

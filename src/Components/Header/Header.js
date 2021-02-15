@@ -16,7 +16,7 @@ function Header(props) {
       height: '40px',
       width: '40px',
       zIndex: '99',
-      marginTop:'-20px',
+      marginTop:'-35px',
       marginLeft: '8px'
     }
 

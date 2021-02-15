@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap");
 body {
   font-family: "Roboto";
+  background-color: #f1f1f1;
 }
 
 .home {
@@ -50,13 +51,12 @@ nav {
   align-items: center;
   min-height: 10vh;
   background: rgba(73, 79, 82, 0.9);
-  font-family: sans-serif;
-  margin-bottom: 30px;
   width: 100vw;
   margin-top: -10px;
   margin-left: -10px;
   font-family: "Bebas Neue";
   font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 .nav-links {
@@ -74,11 +74,11 @@ nav {
   justify-content: space-around;
   max-width: 1600px;
   margin: auto;
+  padding-top: 30px;
 }
 
 .products-item {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .item-tile {
@@ -86,12 +86,21 @@ nav {
   text-align: center;
   margin-bottom: 10px;
   transition-property: all;
-  transition-duration: 0.05s;
+  transition-duration: 0.1s;
+  border: 1px solid #cccccc;
+  box-shadow: 3px 3px 10px #cccccc;
+  background-color: white;
+}
+
+.item-info {
+  border-top: 1px solid #cccccc;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f1f1f1;
 }
 
 .item-tile:hover {
-  box-shadow: 1px 1px 3px #555555;
-  transform: scale(1.05);
+  transform: scale(1.009);
 }
 
 .guitar-img {
@@ -100,15 +109,20 @@ nav {
 }
 
 img {
-  margin-left: -20px;
-  margin-top: 20px;
+  padding-left: -20px;
+  padding-top: 20px;
+}
+
+.details-item {
+  background-color: white;
+  height: 425px;
 }
 
 .details {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .details-container {
@@ -118,7 +132,7 @@ img {
 
 .description {
   width: 300px;
-  align-self: center;
+  text-align: left;
   padding: 30px;
 }
 
@@ -151,6 +165,23 @@ img {
   margin-top: 10px;
 }
 
+.description-box {
+  border: 1px solid #cccccc;
+  font-size: 20px;
+  box-shadow: 3px 3px 10px #cccccc;
+  background-color: white;
+}
+
+.description-title {
+  border-bottom: 1px solid #cccccc;
+  height: 30px;
+}
+
+.details-item {
+  box-shadow: 3px 3px 10px #cccccc;
+  border: 1px solid #cccccc;
+}
+
 .hide {
   display: none;
 }
@@ -160,7 +191,7 @@ img {
 }
 
 .modal {
-  width: 500px;
+  width: 300px;
   position: relative;
   margin: 0px auto;
   padding: 20px;
