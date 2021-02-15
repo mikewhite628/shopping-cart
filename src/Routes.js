@@ -70,7 +70,7 @@ const Routes = () => {
         <BrowserRouter>
             <Header getCartTotal={getCartTotal()}/>
             <Switch>
-                <Route exact path='/'>
+                <Route exact path='/home'>
                     <Home />
                 </Route>
                 <Route exact path='/store'>
