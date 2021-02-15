@@ -18,6 +18,10 @@ console.log(props)
         
     }
 
+    const stylePrice = {
+        marginTop: '50px'
+    }
+
     return (
         <div className='details-container'>
             <h1>{Inventory[params.id].name}</h1> 
@@ -30,7 +34,7 @@ console.log(props)
             <div className='description'>{Inventory[params.id].description}</div> 
             </div>
         </div>
-        <div>${Inventory[params.id].price.toLocaleString()}</div>
+        <div style={stylePrice}>${Inventory[params.id].price.toLocaleString()}</div>
         <div className='quantity-input'>
             <button className='quantity-modifier, left-modifier' onClick={decrement} >
               &mdash;
